@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
             ContractSeeder::class,
             ProjectPhotoSeeder::class,
             ProjectVideoSeeder::class,
+            ProjectFileSeeder::class,
+            ProjectDrawingSeeder::class
         ]);
     }
 }

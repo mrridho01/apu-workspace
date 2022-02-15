@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class ProjectFileSeeder extends Seeder
+class ProjectDrawingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +16,10 @@ class ProjectFileSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('project_files')->insert([
-            'title' => 'Skema instalasi DFR',
+        DB::table('project_drawings')->insert([
+            'title' => 'As Built Drawing DFR',
             'project_id' => 1,
-            'path' => asset('storage/files/skema.pptx'),
+            'path' => asset('storage/drawings/drawing.pdf'),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
