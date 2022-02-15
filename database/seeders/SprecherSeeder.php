@@ -17,7 +17,7 @@ class SprecherSeeder extends Seeder
     public function run()
     {
         DB::table('sprechers')->insert([
-            'title' => 'Konfigurasi RTU Batam',
+            'title' => 'BCU GI 150kV Batu Besar Batam',
             'project_id' => 2,
             'type' => 'E-C',
             'config_path' => asset('storage/config/config.sprXcfg'),

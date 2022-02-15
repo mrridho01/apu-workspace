@@ -17,9 +17,21 @@ class CustomerSeeder extends Seeder
     public function run()
     {
         DB::table('customers')->insert([
-            'name' => 'PT. PLN (Persero) UIKL Kalimantan',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            [
+                'name' => 'PT. PLN (Persero) UIKL Kalimantan',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'name' => 'PT. PLN Batam',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
+            [
+                'name' => 'PT. MRT Jakarta',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ],
         ]);
     }
 }
