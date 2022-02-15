@@ -22,7 +22,9 @@ class DatabaseSeeder extends Seeder
             ProjectPhotoSeeder::class,
             ProjectVideoSeeder::class,
             ProjectFileSeeder::class,
-            ProjectDrawingSeeder::class
+            ProjectDrawingSeeder::class,
+            RecorderSeeder::class,
+            SprecherSeeder::class
         ]);
     }
 }
