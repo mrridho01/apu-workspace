@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CustomerSeeder::class,
             ProjectSeeder::class,
-            ContractSeeder::class
+            ContractSeeder::class,
+            ProjectPhotoSeeder::class,
+            ProjectVideoSeeder::class,
         ]);
     }
 }
