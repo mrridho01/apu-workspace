@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->foreignId('project_id');
+            $table->foreignId('project_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->longText('path');
             $table->timestamps();
             $table->softDeletes();

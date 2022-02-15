@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('project_files', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->longText('text');
-            $table->foreignId('project_id');
+            $table->longText('path');
+            $table->foreignId('project_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('restrict');
             $table->timestamps();
             $table->softDeletes();
         });

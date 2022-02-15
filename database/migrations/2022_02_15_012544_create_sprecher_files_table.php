@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('project_photos', function (Blueprint $table) {
+        Schema::create('sprecher_files', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->longText('path');
-            $table->foreignId('project_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('restrict');
+            $table->foreignId('sprecher_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('restrict');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('project_photos');
+        Schema::dropIfExists('sprecher_files');
     }
 };
