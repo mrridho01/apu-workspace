@@ -25,7 +25,8 @@ class DatabaseSeeder extends Seeder
             ProjectDrawingSeeder::class,
             RecorderSeeder::class,
             SprecherSeeder::class,
-            ServiceSeeder::class
+            ServiceSeeder::class,
+            RecorderFileSeeder::class,
         ]);
     }
 }
