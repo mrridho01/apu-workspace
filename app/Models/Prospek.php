@@ -6,21 +6,20 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Customer extends Model
+class Prospek extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'name'
+        'title',
+        'category',
+        'customer_id',
+        'description',
+        'is_success'
     ];
 
-    public function projects()
+    public function customer()
     {
-        return $this->hasMany(Project::class);
-    }
-
-    public function prospeks()
-    {
-        return $this->hasMany(Prospek::class);
+        return $this->belongsTo(Customer::class);
     }
 }
