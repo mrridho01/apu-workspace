@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         return $this->call([
             UserSeeder::class,
             CustomerSeeder::class,
-            ProspekSeeder::Class,
+            ProspekSeeder::class,
             ProjectSeeder::class,
             ContractSeeder::class,
             ProjectPhotoSeeder::class,
